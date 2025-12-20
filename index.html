@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STS GROUP | Step Towards the Summit</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'sans-serif'],
+          },
+          colors: {
+            primary: '#0f2a44',
+            gold: '#c9a24d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .logo-anim {
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 dark:bg-slate-900 dark:text-gray-100 transition">
+
+<!-- HEADER -->
+<header class="flex justify-between items-center px-6 py-4 border-b dark:border-slate-700">
+  <h1 class="text-xl font-extrabold text-primary dark:text-gold">STS GROUP</h1>
+  <button onclick="toggleTheme()" class="px-3 py-2 rounded bg-gray-200 dark:bg-slate-700">
+    <i class="fas fa-moon dark:hidden"></i>
+    <i class="fas fa-sun hidden dark:block"></i>
+  </button>
+</header>
+
+<!-- HERO -->
+<section class="text-center py-20 px-6">
+  <img src="logo.png" alt="STS Logo" class="mx-auto w-40 mb-8 logo-anim"/>
+
+  <h2 class="text-4xl font-extrabold mb-4">STS GROUP</h2>
+  <p class="text-lg text-gold font-semibold mb-6">Step Towards the Summit</p>
+
+  <p class="max-w-3xl mx-auto text-gray-600 dark:text-gray-300 leading-relaxed">
+    منصة تعليمية تهدف إلى دعم طلبة مرحلة البكلوريا من خلال توفير مصادر دراسية
+    منظمة وموثوقة، تشمل الكتب، الملازم، الشروحات، وأسئلة المدرسين والامتحانات الوزارية،
+    بأسلوب أكاديمي واضح وخطوات ثابتة نحو التميز العلمي.
+  </p>
+</section>
+
+<!-- SUBJECTS -->
+<section class="max-w-6xl mx-auto px-6 pb-20">
+  <h3 class="text-2xl font-bold mb-8 text-center">المواد الدراسية</h3>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="card">أحياء</div>
+    <div class="card">رياضيات</div>
+    <div class="card">فيزياء</div>
+    <div class="card">كيمياء</div>
+    <div class="card">اللغة العربية</div>
+    <div class="card">اللغة الإنجليزية</div>
+    <div class="card">اللغة الكوردية</div>
+    <div class="card">التربية الإسلامية ومعرفة الأديان</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 border-t dark:border-slate-700 text-sm text-gray-500">
+  © 2025 STS GROUP – All Rights Reserved
+</footer>
+
+<script>
+  function toggleTheme() {
+    document.documentElement.classList.toggle('dark');
+  }
+</script>
+
+<style>
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform .3s;
+  }
+  .dark .card {
+    background: #1e293b;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+</style>
+
+</body>
+</html>
