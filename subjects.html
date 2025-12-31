@@ -1,143 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>المواد الدراسية | STS GROUP</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: '#0f2a56',
-            gold: '#f4b400'
-          }
-        }
-      }
-    }
-  </script>
-</head>
-
-<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100">
-
-<!-- NAVBAR -->
-<header class="bg-white dark:bg-slate-900 border-b dark:border-slate-700">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-    <div class="flex items-center gap-3">
-      <img src="assets/logo.png" class="h-9">
-      <span class="font-bold">STS GROUP</span>
-    </div>
-    <a href="index.html" class="text-sm hover:text-gold">العودة للرئيسية</a>
-  </div>
-</header>
-
-<!-- HEADER -->
-<section class="py-16 text-center bg-gradient-to-l from-primary to-slate-900 text-white">
-  <h1 class="text-4xl font-bold mb-4">المواد الدراسية</h1>
-  <p class="text-slate-200">
-    جميع مواد البكالوريا منظمة ومجانية
-  </p>
-</section>
-
-<!-- SUBJECTS GRID -->
-<section class="py-20">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-
-    <!-- SUBJECT CARD -->
-    <div class="bg-white dark:bg-slate-800 rounded-xl shadow p-6">
-      <h2 class="text-xl font-bold mb-4">الأحياء</h2>
-      <a href="biology.html" class="inline-block mt-4 text-primary hover:underline"> دخول المادة →</a>
-      <ul class="space-y-3 text-sm">
-        <li>📘 الكتاب المدرسي</li>
-        <li>📄 الملازم</li>
-        <li>🎥 الشروحات</li>
-        <li>❓ أسئلة المدرسين</li>
-        <li>📝 الأسئلة الوزارية</li>
-      </ul>
-      <a href="#" class="inline-block mt-4 text-primary hover:underline">
-        دخول المادة →
-      </a>
-    </div>
-
-    <div class="bg-white dark:bg-slate-800 rounded-xl shadow p-6">
-      <h2 class="text-xl font-bold mb-4">الرياضيات</h2>
-      <ul class="space-y-3 text-sm">
-        <li>📘 الكتاب المدرسي</li>
-        <li>📄 الملازم</li>
-        <li>🎥 الشروحات</li>
-        <li>❓ أسئلة المدرسين</li>
-        <li>📝 الأسئلة الوزارية</li>
-      </ul>
-      <a href="#" class="inline-block mt-4 text-primary hover:underline">
-        دخول المادة →
-      </a>
-    </div>
-
-    <div class="bg-white dark:bg-slate-800 rounded-xl shadow p-6">
-      <h2 class="text-xl font-bold mb-4">الفيزياء</h2>
-      <ul class="space-y-3 text-sm">
-        <li>📘 الكتاب المدرسي</li>
-        <li>📄 الملازم</li>
-        <li>🎥 الشروحات</li>
-        <li>❓ أسئلة المدرسين</li>
-        <li>📝 الأسئلة الوزارية</li>
-      </ul>
-      <a href="#" class="inline-block mt-4 text-primary hover:underline">
-        دخول المادة →
-      </a>
-    </div>
-
-    <div class="bg-white dark:bg-slate-800 rounded-xl shadow p-6">
-      <h2 class="text-xl font-bold mb-4">الكيمياء</h2>
-      <ul class="space-y-3 text-sm">
-        <li>📘 الكتاب المدرسي</li>
-        <li>📄 الملازم</li>
-        <li>🎥 الشروحات</li>
-        <li>❓ أسئلة المدرسين</li>
-        <li>📝 الأسئلة الوزارية</li>
-      </ul>
-      <a href="#" class="inline-block mt-4 text-primary hover:underline">
-        دخول المادة →
-      </a>
-    </div>
-
-    <div class="bg-white dark:bg-slate-800 rounded-xl shadow p-6">
-      <h2 class="text-xl font-bold mb-4">اللغة العربية</h2>
-      <ul class="space-y-3 text-sm">
-        <li>📘 القواعد</li>
-        <li>📄 الأدب</li>
-        <li>🎥 الشروحات</li>
-        <li>❓ أسئلة مدرسين</li>
-        <li>📝 وزاريات</li>
-      </ul>
-      <a href="#" class="inline-block mt-4 text-primary hover:underline">
-        دخول المادة →
-      </a>
-    </div>
-
-    <div class="bg-white dark:bg-slate-800 rounded-xl shadow p-6">
-      <h2 class="text-xl font-bold mb-4">التربية الإسلامية</h2>
-      <ul class="space-y-3 text-sm">
-        <li>📘 الكتاب</li>
-        <li>📄 الملازم</li>
-        <li>🎥 الشروحات</li>
-        <li>❓ أسئلة</li>
-        <li>📝 وزاريات</li>
-      </ul>
-      <a href="#" class="inline-block mt-4 text-primary hover:underline">
-        دخول المادة →
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<footer class="py-6 bg-slate-950 text-slate-400 text-center text-sm">
-  © 2025 STS GROUP
-</footer>
-
-</body>
-</html>
