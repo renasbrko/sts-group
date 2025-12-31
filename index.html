@@ -1,207 +1,139 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="scroll-smooth">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>STS GROUP | خطوة نحو القمة</title>
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Tailwind Config -->
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: '#0f2a56',
-            gold: '#f4b400'
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont; }
-  </style>
+<meta charset="UTF-8">
+<title>STS GROUP | Step Towards the Summit</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Tahoma", Arial;
+  background: #f4f6f9;
+  color: #1e293b;
+}
+nav {
+  background: #0f172a;
+  padding: 15px;
+  text-align: center;
+}
+nav a {
+  color: #facc15;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+header {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+h2 {
+  color: #0f172a;
+}
+footer {
+  background: #0f172a;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+a.button {
+  display: inline-block;
+  background: #facc15;
+  color: #000;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
 </head>
 
-<body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100">
+<body>
 
-<!-- ================= NAVBAR ================= -->
-<header class="fixed w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur z-50 border-b dark:border-slate-700">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+<nav>
+  <a href="#">الرئيسية</a>
+  <a href="#subjects">المواد</a>
+  <a href="#about">من نحن</a>
+</nav>
 
-    <!-- Logo -->
-    <div class="flex items-center gap-3">
-      <img src="assets/logo.png" alt="STS GROUP" class="h-10">
-      <span class="font-bold text-primary dark:text-white">STS GROUP</span>
-    </div>
+<header>
+  <h1>STS GROUP</h1>
+  <p>Step Towards the Summit</p>
+</header>
 
-    <!-- Links -->
-    <nav class="hidden md:flex items-center gap-6 text-sm">
-      <a href="#" class="hover:text-gold">المواد</a>
-      <a href="#" class="hover:text-gold">المصادر</a>
-      <a href="#" class="hover:text-gold">من نحن</a>
-    </nav>
-
-    <!-- Actions -->
-    <div class="flex items-center gap-3">
-      <button id="toggleDark" class="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-700">
-        🌙
-        <button id="langToggle"
-        class="px-3 py-1 border rounded text-sm hover:bg-slate-100 dark:hover:bg-slate-700">EN</button>
-
-<!-- ================= HERO ================= -->
-<section class="pt-28 pb-20 bg-gradient-to-l from-primary to-slate-900 text-white">
-  <h1 
-  class="text-4xl md:text-5xl font-bold leading-tight mb-6"
-  data-ar="خطوة نحو القمة"
-  data-en="Step Towards the Summit">
-  خطوة نحو <span class="text-gold">القمة</span>
-</h1>
-
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-
-    <!-- Text -->
-    <div>
-      <span class="inline-block bg-white/10 px-3 py-1 rounded text-sm mb-4">
-        مبادرة تعليمية غير ربحية
-      </span>
-
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-        خطوة نحو <span class="text-gold">القمة</span>
-      </h1>
-
-      <p class="text-lg text-slate-200 mb-8">
-        نُمكّن طلبة البكالوريا من تحقيق التفوق الأكاديمي عبر التعلم المنظم،
-        المواد، وروح المجتمع الداعم.
-        كل خطوة صغيرة تقرّبك من النجاح.
-      </p>
-
-      <div class="flex gap-4">
-        <a href="#" class="bg-gold text-slate-900 px-6 py-3 rounded font-semibold">
-          استكشاف المواد →
-        </a>
-        <a href="#" class="border border-white/30 px-6 py-3 rounded">
-          المواد
-        </a>
-      </div>
-
-      <div class="mt-6 flex gap-6 text-sm text-slate-300">
-        <span>✔ مجاني 100%</span>
-        <span>✔ بقيادة متطوعين</span>
-        <span>✔ مجتمعي</span>
-      </div>
-    </div>
-
-    <!-- Visual Card -->
-    <div class="relative">
-      <div class="rounded-xl border border-white/20 h-72"></div>
-      <div class="absolute bottom-4 right-4 bg-white text-slate-800 rounded-lg px-5 py-3 shadow">
-        <p class="font-bold text-lg">+1000</p>
-        <p class="text-sm">طالب تم دعمهم</p>
-      </div>
-    </div>
-
+<section>
+  <h2>من نحن</h2>
+  <div class="card">
+    <p>
+      STS GROUP هي مبادرة تعليمية غير ربحية تهدف إلى مساعدة طلبة المرحلة الإعدادية
+      عبر توفير محتوى منظم، واضح، وسهل الوصول، لمساعدة الطلبة على التفوق وتحقيق أهدافهم.
+    </p>
   </div>
 </section>
 
-<!-- ================= MISSION ================= -->
-<section class="py-20 bg-slate-50 dark:bg-slate-800">
-  <div class="max-w-7xl mx-auto px-4 text-center">
+<section id="subjects">
+  <h2>المواد الدراسية</h2>
 
-    <span class="text-gold font-semibold">رسالتنا</span>
-    <h2 class="text-3xl font-bold mt-2 mb-12">
-      نُحقق النجاح عبر خطوات صغيرة مجانية
-    </h2>
+  <div class="card">
+    <h3>📘 الأحياء</h3>
+    <p>ملخصات – شروحات – أسئلة وزارية</p>
+  </div>
 
-    <div class="grid md:grid-cols-4 gap-6 text-right">
-      <div class="bg-white dark:bg-slate-900 p-6 rounded-xl shadow">
-        <h3 class="font-bold mb-2">دعم الطلبة</h3>
-        <p class="text-sm text-slate-600 dark:text-slate-300">
-          توجيه أكاديمي يساعد كل طالب على بلوغ إمكانياته.
-        </p>
-      </div>
+  <div class="card">
+    <h3>📐 الرياضيات</h3>
+    <p>قوانين – مسائل محلولة – تمارين</p>
+  </div>
 
-      <div class="bg-white dark:bg-slate-900 p-6 rounded-xl shadow">
-        <h3 class="font-bold mb-2">تعلم منظم</h3>
-        <p class="text-sm text-slate-600 dark:text-slate-300">
-          خطط دراسية واضحة تجعل المواد أسهل.
-        </p>
-      </div>
+  <div class="card">
+    <h3>⚛️ الفيزياء</h3>
+    <p>شرح مبسط – قوانين – أمثلة</p>
+  </div>
 
-      <div class="bg-white dark:bg-slate-900 p-6 rounded-xl shadow">
-        <h3 class="font-bold mb-2">موارد مجانية</h3>
-        <p class="text-sm text-slate-600 dark:text-slate-300">
-          كتب، ملازم، وفيديوهات بدون أي تكلفة.
-        </p>
-      </div>
-
-      <div class="bg-white dark:bg-slate-900 p-6 rounded-xl shadow">
-        <h3 class="font-bold mb-2">قيم مجتمعية</h3>
-        <p class="text-sm text-slate-600 dark:text-slate-300">
-          مبادرة قائمة على العطاء والتطوع.
-        </p>
-      </div>
-    </div>
+  <div class="card">
+    <h3>🧪 الكيمياء</h3>
+    <p>ملخصات شاملة وأسئلة وزارية</p>
   </div>
 </section>
 
-<!-- ================= SUBJECTS ================= -->
-<section class="py-20">
-  <div class="max-w-7xl mx-auto px-4">
-
-    <div class="text-center mb-12">
-      <span class="text-gold font-semibold">المواد الدراسية</span>
-      <h2 class="text-3xl font-bold mt-2">أتقن كل مادة</h2>
-      <p class="text-slate-600 dark:text-slate-300 mt-3">
-        موارد شاملة لكل مواد البكالوريا
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-4 gap-6">
-      <div class="bg-white dark:bg-slate-900 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="font-bold">الأحياء</h3>
-        <p class="text-sm text-slate-500 mt-2">علم الحياة والوراثة</p>
-      </div>
-
-      <div class="bg-white dark:bg-slate-900 p-6 rounded-xl shadow">
-        <h3 class="font-bold">الرياضيات</h3>
-        <p class="text-sm text-slate-500 mt-2">الجبر والهندسة</p>
-      </div>
-
-      <div class="bg-white dark:bg-slate-900 p-6 rounded-xl shadow">
-        <h3 class="font-bold">الفيزياء</h3>
-        <p class="text-sm text-slate-500 mt-2">الميكانيك والطاقة</p>
-      </div>
-
-      <div class="bg-white dark:bg-slate-900 p-6 rounded-xl shadow">
-        <h3 class="font-bold">الكيمياء</h3>
-        <p class="text-sm text-slate-500 mt-2">التفاعلات والمركبات</p>
-      </div>
-    </div>
-
+<section id="about">
+  <h2>رسالتنا</h2>
+  <div class="card">
+    <p>
+      نؤمن أن التعليم حق للجميع، وأن التنظيم والمعرفة هما الطريق الحقيقي
+      للنجاح. هدفنا أن نكون الداعم الأول لطلبة السادس الإعدادي.
+    </p>
   </div>
 </section>
 
-<!-- ================= QUOTE ================= -->
-<section class="py-20 bg-gradient-to-l from-primary to-slate-900 text-white text-center">
-  <p class="text-2xl font-bold mb-4">
-    "خير الناس أنفعهم للناس"
-  </p>
-  <p class="text-slate-300">
-    هذا المبدأ يقود كل ما نقوم به في STS GROUP
-  </p>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="py-8 bg-slate-950 text-slate-400 text-center text-sm">
-  © 2025 STS GROUP – Step Towards the Summit
+<footer>
+  © 2025 STS GROUP – جميع الحقوق محفوظة
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
