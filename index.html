@@ -1,196 +1,14 @@
 <!DOCTYPE html>
-<html lang="ar" class="scroll-smooth">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>STS GROUP | Step Towards the Summit</title>
-
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Cairo', 'sans-serif'],
-          },
-          colors: {
-            primary: '#0f2a44',
-            gold: '#c9a24d',
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    .logo-anim {
-      animation: float 4s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%,100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>STS GROUP</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="bg-gray-50 text-gray-800 dark:bg-slate-900 dark:text-gray-100 transition">
-
-<!-- HEADER -->
-</header>
-<header class="flex justify-between items-center px-8 py-4 border-b dark:border-slate-700">
-
-  <!-- LEFT -->
-  <div class="text-xl font-extrabold text-primary dark:text-gold">
-    STS GROUP
-  </div>
-
-  <!-- RIGHT -->
-   <nav class="flex items-center gap-6 text-sm font-semibold">
-    <a href="#about">عن المجموعة</a>
-    <a href="#subjects">الاقسام</a>
-    <a href="#home">الصفحة الرئيسية</a>
-
-    <!-- Dark Mode -->
-    <button onclick="toggleTheme()" class="px-2 py-1 rounded bg-gray-200 dark:bg-slate-700">
-      🌙
-    </button>
-
-</header>
-
-
-<!-- HERO -->
-<section id="home" class="max-w-6xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-10 items-center">
-
-  <!-- LEFT: Logo -->
-  <div class="text-left">
-    <img src="logo.png" class="w-40 mb-4 logo-anim">
-    <h2 class="text-4xl font-extrabold">STS GROUP</h2>
-    <p class="text-gold font-semibold mt-2">Step Towards the Summit</p>
-  </div>
-
-  <!-- RIGHT: Text -->
-  <div class="text-right leading-relaxed" dir="rtl">
-    <p class="text-gray-600 dark:text-gray-300">
-      منصة تعليمية تهدف إلى دعم طلبة مرحلة البكلوريا من خلال توفير مصادر دراسية
-      منظمة وموثوقة، تشمل الكتب، الملازم، الشروحات، وأسئلة المدرسين والامتحانات
-      الوزارية، بأسلوب أكاديمي واضح وخطوات ثابتة نحو التميز العلمي.
-    </p>
-  </div>
-
-</section>
-
-<div class="h-1 w-full bg-gold my-10"></div>
-
-<!-- SUBJECTS -->
-<section id="subjects" class="bg-slate-100 dark:bg-slate-800 py-16">
-  <div class="max-w-6xl mx-auto px-6">
-
-    <h3 class="text-2xl font-bold mb-8 text-center text-primary dark:text-gold">
-      الاقسام
-    </h3>
-
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <div class="card">أحياء</div>
-    <div class="card">رياضيات</div>
-    <div class="card">فيزياء</div>
-    <div class="card">كيمياء</div>
-    <div class="card">اللغة العربية</div>
-    <div class="card">اللغة الإنجليزية</div>
-    <div class="card">اللغة الكوردية</div>
-    <div class="card">التربية الإسلامية ومعرفة الأديان</div>
-    <div class="card">المعدلات</div>
-  </div>
-</section>
-<div class="h-1 w-full bg-gold my-10"></div>
-
-<html lang="ar" class="dark">
-<head>
-<meta charset="UTF-8">
-<title>عن المجموعة | STS GROUP</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  darkMode: 'class',
-  theme: {
-    extend: {
-      colors: {
-        gold: '#c9a24d'
-      }
-    }
-  }
-}
-</script>
-</head>
-
-<body class="bg-gray-100 dark:bg-slate-900 text-gray-800 dark:text-gray-100 leading-relaxed">
-
-
-<!-- CONTENT -->
-<section id="about" class="max-w-6xl mx-auto px-6 py-20">
-  <h3 class="text-2xl font-bold mb-6 text-right">عن المجموعة</h3>
-
-  <h3 class="text-center text-gold mb-6 text-right">STS GROUP – Step Towards the Summit</h3>
-
-  <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow text-right" dir="rtl">
-    <p class="leading-loose text-gray-700 dark:text-gray-300">
-      مبادرة تعليمية غير ربحية تضم فريقًا متميزًا من المهندسين، والطلاب الجامعيين،
-      ونخبة من أساتذة الصف الثاني عشر (مرحلة البكلوريا).
-      <br><br>
-      تهدف المبادرة إلى دعم طلبة البكلوريا من خلال مساعدتهم على تنظيم دراستهم،
-      وتوفير مصادر تعليمية موثوقة ومتكاملة، تُقدَّم بأسلوب أكاديمي واضح ومنهجي.
-      <br><br>
-      نؤمن في STS GROUP بأن النجاح الدراسي هو ثمرة خطوات صغيرة وثابتة، ومن هذا
-      المنطلق نعمل على توفير الكتب المعتمدة، الملازم الدراسية، الشروحات،
-      أسئلة المدرسين، والامتحانات الوزارية ضمن بيئة تعليمية بسيطة وسهلة الاستخدام.
-      <br><br>
-      وانطلاقًا من إيماننا بمبدأ <strong>«خير الناس أنفعهم للناس»</strong>،
-      نحرص على تقديم العلم والمعرفة <strong>دون مقابل</strong>، سعيًا لنشر
-      الفائدة ودعم الطلبة في مسيرتهم التعليمية، بروح العطاء والمسؤولية المجتمعية.
-    </p>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="text-center py-6 border-t dark:border-slate-700 text-sm text-gray-500">
-  © 2025 STS GROUP – All Rights Reserved
-</footer>
-
-<script>
-  function toggleTheme() {
-    document.documentElement.classList.toggle('dark');
-  }
-</script>
-
-<style>
-  .card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    text-align: center;
-    font-weight: bold;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    cursor: pointer;
-    transition: transform .3s;
-  }
-  .dark .card {
-    background: #1e293b;
-  }
-  .card:hover {
-    transform: translateY(-5px);
-  }
-</style>
+<h1>STS GROUP</h1>
+<p>خطوة نحو القمة</p>
 
 </body>
 </html>
