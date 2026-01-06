@@ -31,23 +31,25 @@
 
 <body class="bg-gray-100 dark:bg-slate-900 text-gray-800 dark:text-gray-100">
 
-<!-- HEADER -->
-</header>
 <header class="flex justify-between items-center px-8 py-4 border-b dark:border-slate-700">
 
-  <!-- LEFT -->
+  <!-- RIGHT (روابط) -->
+  <nav class="flex items-center gap-6 text-sm font-semibold">
+    <a href="../index.html#about">عن المجموعة</a>
+    <a href="../index.html#subjects">الأقسام</a>
+    <a href="../index.html">الصفحة الرئيسية</a>
+
+    <button onclick="toggleTheme()"
+      class="px-2 py-1 rounded bg-gray-200 dark:bg-slate-700">
+      🌙
+    </button>
+  </nav>
+
+  <!-- LEFT (Logo / Name) -->
   <div class="text-xl font-extrabold text-primary dark:text-gold">
     STS GROUP
   </div>
 
-  <!-- RIGHT -->
-   <nav class="flex items-center gap-6 text-sm font-semibold">
-    <a href="#about">عن المجموعة</a>
-    <a href="#subjects">الاقسام</a>
-    <a href="#home">الصفحة الرئيسية</a>
-
-    <!-- Dark Mode -->
-    <button onclick="toggleTheme()" class="px-2 py-1 rounded bg-gray-200 dark:bg-slate-700"> 🌙 </button>
 </header>
   
 <!-- CONTENT -->
