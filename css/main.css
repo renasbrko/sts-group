@@ -1,39 +1,26 @@
-:root {
-    --bg-color: #f3f4f6;       
-    --card-bg: #ffffff;       
-    --text-color: #1f2937;     
-    --accent-color: #1d4ed8;   
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all .3s ease;
 }
 
-body.dark-mode {
-    --bg-color: #0f172a;     
-    --card-bg: #1e293b;       
-    --text-color: #f3f4f6;     
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+.card:hover {
+  transform: translateY(-6px);
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: 'Cairo', sans-serif; 
+.dark .card {
+  background: #1e293b;
 }
 
-.category-card {
-    background-color: var(--card-bg);
-    color: var(--text-color);
-    border-radius: 12px;      
-    padding: 20px;
-    text-align: center;
-    box-shadow: var(--shadow);
-    transition: transform 0.2s, background-color 0.3s;
-    cursor: pointer;
-    border: 1px solid transparent; 
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-
-.category-card:hover {
-    transform: translateY(-5px); 
-    border-color: var(--accent-color);
-}
