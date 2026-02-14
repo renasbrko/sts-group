@@ -19,3 +19,26 @@ body.dark {
   background-color: var(--bg-dark);
   color: var(--text-dark);
 }
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.card {
+  background-color: var(--card-light);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+body.dark .card {
+  background-color: var(--card-dark);
+  border: 1px solid var(--border-dark);
+}
