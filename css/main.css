@@ -1,44 +1,25 @@
-:root {
-  --bg-light: #ffffff;
-  --text-light: #111;
-  --card-light: #fafafa;
-  --border-light: #e0e0e0;
-
-  --bg-dark: #121212;
-  --text-dark: #fff;
-  --card-dark: #1e1e1e;
-  --border-dark: #444;
-}
-
-body {
-  background-color: var(--bg-light);
-  color: var(--text-light);
-}
-
-body.dark {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
-}
-
-body {
-  background-color: var(--bg-light);
-  color: var(--text-light);
-}
-
-body.dark {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
-}
-
 .card {
-  background-color: var(--card-light);
-  border: 1px solid var(--border-light);
-  border-radius: 12px;
-  padding: 20px;
-  transition: 0.3s;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all .3s ease;
 }
 
-body.dark .card {
-  background-color: var(--card-dark);
-  border: 1px solid var(--border-dark);
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.dark .card {
+  background: #1e293b;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
 }
