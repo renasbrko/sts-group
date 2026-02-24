@@ -13,10 +13,6 @@
   transform: translateY(-6px);
 }
 
-.dark .card {
-  background: #1e293b;
-}
-
 .section-title {
   font-size: 1.8rem;
   font-weight: 800;
