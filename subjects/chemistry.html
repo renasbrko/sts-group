@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <title>الكيمياء | STS GROUP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/main.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'sans-serif']
+          },
+          colors: {
+            primary: '#0f2a44',
+            gold: '#c9a24d'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-100 dark:bg-slate-900 text-gray-800 dark:text-gray-100">
+
+<header class="flex justify-between items-center px-8 py-4 border-b dark:border-slate-700">
+
+  <!-- RIGHT (روابط) -->
+  <nav class="flex items-center gap-6 text-sm font-semibold">
+    <a href="../index.html">الصفحة الرئيسية</a>
+    <a href="../index.html#subjects">الأقسام</a>
+    <a href="../index.html#about">عن المجموعة</a>
+  </nav>
+
+  <!-- LEFT (Logo / Name) -->
+  <div class="text-xl font-extrabold text-primary dark:text-gold">
+    STS GROUP
+  </div>
+
+</header>
+
+<!-- CONTENT -->
+<section class="max-w-6xl mx-auto px-6 py-20">
+
+  <h1 class="section-title text-primary dark:text-gold">
+    قسم الكيمياء
+  </h1>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <a href="../chemistry/books.html" class="card">📘 كتاب الكيمياء الشامل</a>
+
+    <a href="../chemistry/wazariyat.html" class="card">📝 وزاريات الكيمياء</a>
+
+    <a href="../chemistry/teachers.html" class="card">👨‍🏫 ملازم الأساتذة</a>
+
+    <a href="../chemistry/explanations.html" class="card">🎥 شروحات</a>
+
+    <a href="../chemistry/questions.html" class="card">❓ أسئلة وزارية (50 سؤال)</a>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 border-t dark:border-slate-700 text-sm text-gray-500">
+  © 2025 STS GROUP
+</footer>
+
+<script src="../js/theme.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>
